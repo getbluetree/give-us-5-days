@@ -1,0 +1,6 @@
+; Packaging information for Surreal Studio
+name = "Jarvis One Page Parallax"
+description = "Full size package (recomended)"
+core = "7.x"
+
+; files[] = jarvis.profile

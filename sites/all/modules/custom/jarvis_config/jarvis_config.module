@@ -1,0 +1,68 @@
+<?php
+
+/**
+ * Implement hook_block_info().
+ */
+function jarvis_config_block_info() {
+  $blocks['jarvis_banner'] = array(
+    'info' => t('Banner'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implement hook_block_view().
+ */
+function jarvis_config_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'jarvis_banner':
+      $block['subject'] = t('Banner');
+      $block['content'] = array(
+        '#theme' => 'jarvis_banner',
+      );
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Implement hook_theme().
+ */
+function jarvis_config_theme() {
+  return array(
+    'jarvis_banner' => array(
+      'template' => 'templates/jarvis-banner',
+      'variables' => array(),
+      'override preprocess functions' => TRUE,
+    ),
+  );
+}
+
+function jarvis_config_admin_paths() {
+  return array(
+    'comment/*/edit' => 'true'
+  );
+}
+
+/**
+ * Implement hook_form_FORM_ID_alter().
+ */
+function jarvis_config_form_block_admin_configure_alter(&$form, &$form_state, $form_id) {
+  $name = $form['module']['#value'] . '-' . $form['delta']['#value'];
+  $subtile = variable_get($name, '');
+  
+  $form['settings']['subtitle'] = array(
+    '#title' => t('Subtitle'),
+    '#type' => 'textfield',
+    '#default_value' => $subtile
+  );
+  $form['#submit'][] = 'jarvis_config_block_admin_configure_submit';
+ 
+}
+
+function jarvis_config_block_admin_configure_submit($form, $form_state) {
+  $name = $form['module']['#value'] . '-' . $form['delta']['#value'];
+  variable_set($name, $form_state['values']['subtitle']);
+}

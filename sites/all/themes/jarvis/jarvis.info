@@ -1,0 +1,56 @@
+name = Jarvis
+description = Jarvis Drupal Theme.
+core = 7.x
+engine = phptemplate
+
+settings[toggle_logo] = 1
+settings[toggle_name] = 1
+settings[toggle_slogan] = 1
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 1
+settings[default_logo] = 1
+settings[default_favicon] = 1
+settings[css3_textarea] = 0
+settings[webclip_precomp] = 1
+settings[typo_heading_style_enable] = 0
+settings[nodetitle_enable] = 0
+settings[typo_view_title_enable] = 0
+settings[skins] = 'blu'
+settings[header_size] = 'full'
+settings[header_background_type] = 'video'
+settings[header_video_play] = 0
+settings[header_video_content_display] = 1
+settings[nf_background] = 'custom'
+settings[menu_sticky] = 1
+settings[menu_custom_enable] = 0
+settings[sidebar_position] = 'right'
+settings[enable_preloader] = 1
+settings[enable_map] = 1
+
+
+; Important Drupal regions
+
+regions[home_slider]       = Home Slider
+regions[about_us_top]      = About us top
+regions[about_us_bottom]   = About us bottom
+regions[our_team]          = Our team
+regions[clients]           = Our clients
+regions[services]          = Our services top
+regions[services_bottom]   = Our services bottom
+regions[portfolio]   	   = Portfolio
+regions[blog]   	   	   = Our Journal
+regions[contact]           = Contact
+regions[content]           = Content
+regions[sidebar]           = Sidebar
+regions[footer]            = Footer
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+
+version = "7.x-2.0"
+core = "7.x"
+project = "jarvis"

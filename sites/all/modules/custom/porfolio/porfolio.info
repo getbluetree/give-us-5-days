@@ -1,0 +1,5 @@
+name = Porfolio Ajax
+description = Porfolio
+package = Custom
+core = 7.x  
+files[] = porfolio.module

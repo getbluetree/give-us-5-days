@@ -1,0 +1,31 @@
+a, .highlight, nav.light .main-menu a:hover, nav.dark .main-menu a:hover, .parallax .quote i, .service-box:hover .service-icon, #filters ul li a:hover h3, #filters ul li a.active h3, nav.light .main-menu li.active a, nav.dark .main-menu li.active a, .main-menu li.active-trail a, .tags-list li a:hover, .post-tags li a:hover, .post-title a:hover {
+	color: #6DC815;
+}
+
+nav.colored, nav.light.colored, .twitter-feed-icon i, .testimonial-icon i, .home-gradient, .home-parallax, #project-navigation ul li#prevProject a:hover, #project-navigation ul li#nextProject a:hover, #project-navigation ul li a:hover, #closeProject a:hover, .mc4wp-form input[type="submit"], #respond input[type="submit"], input[type="submit"], .pagination a.previous:hover, .pagination a.next:hover, .service-box:hover, .button, .skillbar .skill-percentage, .flex-control-nav li a:hover, .flex-control-nav li a.flex-active, .testimonial-slider .flex-direction-nav li a i, .twitter-slider .flex-direction-nav li a i, .project-media .flex-direction-nav li a i, .color-block, .home1 .slabtextdone .slabtext.second-child, .home4 .slabtextdone .slabtext.second-child, .caption, .copyright, .title h1, .service-features .img-container, .service-features .img-container, .view-profile, .team-member:hover .team-desc, .service-box .service-icon, .modal .close, #nav .sub-menu li.current-menu-item a, #nav .sub-menu li.current-menu-item a:hover, #nav .sub-menu li.current_page_item a, #nav .sub-menu li.current_page_item a:hover, #nav .sub-menu li .sub-menu li.current-menu-item a, #nav .sub-menu li .sub-menu li.current-menu-item a:hover, #nav .sub-menu li .sub-menu li.current_page_item a, #nav .sub-menu li .sub-menu li.current_page_item a:hover, #nav .sub-menu li a.active, #nav .sub-menu li a.active:hover, #port-pagination a:hover, #respond input[type="submit"], .woocommerce #respond input#submit, .woocommerce ul.products li.product a.button, .woocommerce-page ul.products li.product a.button, .woocommerce div.product form.cart .button, .woocommerce-page .woocommerce-message .button, .woocommerce .cart-collaterals .shipping_calculator .button, .woocommerce-page .cart-collaterals .shipping_calculator .button, .woocommerce .login input.button, .woocommerce .checkout_coupon input.button, .woocommerce .cart input.button.alt, .woocommerce .login input.button, .woocommerce .checkout_coupon input.button, .woocommerce #respond input#submit:hover, .woocommerce-page .woocommerce-message .button:hover, .woocommerce button.button.alt, .woocommerce a.wc-backward, .woocommerce a.wc-backward:hover, .woocommerce #payment #place_order, .woocommerce-page #payment #place_order, .woocommerce #payment #place_order:hover, .woocommerce-page #payment #place_order:hover, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range, .latest-blog .blog-item .inner:hover .blog-item-description .desc.post-icon, .blog .blog-overlay, .latest-blog .blog-item .blog-item-description span.date, div.wpcf7 div.stretch-submit input[type="submit"], .plan.featured .plan-head {
+	background-color: #6DC815;
+}/* BACKGROUND STANDARD COLOR */
+
+.service-features .img-container:after, .service-box:hover .service-icon, .callout, blockquote p, .pullquote.align-left, .pullquote.align-right {
+	border-color: #6DC815;
+}/* BORDER STANDARD COLOR */
+
+.title h1, .service-box .service-icon {
+	box-shadow: 0 0 0 3px #6DC815;
+}/* BOX-SHADOW STANDARD COLOR */
+
+.portfolio .portfolio-overlay {
+	background: #6DC815;
+}/* BACKGROUND DARK COLOR */
+
+.tabs.primary li a.active, .tab a.selected {
+	box-shadow: 0px -3px 0px 0px #6DC815;
+}
+::-moz-selection {
+ background: #6DC815;
+ color: white;
+}
+::selection {
+	background: #6DC815;
+	color: white;
+}

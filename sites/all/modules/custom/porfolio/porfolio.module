@@ -1,0 +1,34 @@
+<?php
+	/*
+	implement hook_menu 
+	*/
+	function porfolio_menu(){
+		$items['porfolio'] = array(
+				'title' 			=> 'Porfolio' , 
+				'page callback' 	=> 'porfolio_content' , 
+				'access callback'   => TRUE , //no permission
+			);
+		 				
+		return $items;	
+	}
+	 
+	function porfolio_content() {
+		$node_id = $_POST['node_id'];
+		$node = node_load($node_id) ;
+		$content = array('node'=>$node);
+		echo theme('getporfolio' , $content );
+	}
+	/*
+	implement hook_theme 
+	*/
+	function porfolio_theme(){
+		return array(
+        'getporfolio' => array(
+            	'template'  => 'porfolio' ,
+            	'path'		=>  drupal_get_path('module', 'porfolio') .'/theme' 
+
+        	),	
+      );
+	} 
+	
+?>
